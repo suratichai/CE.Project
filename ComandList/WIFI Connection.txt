@@ -1,0 +1,11 @@
+WIFI Connection
+When there is not a network cable for your ROCK Pi 4 the WIFI connection is another good choice. ROCK Pi 4 supports 2.4G/5G WIFI wireless network.
+To test the WIFI performance.
+
+sudo su $ Switch to super user mode
+
+nmcli r wifi on $ Open the WIFI
+
+nmcli dev wifi $ Scan WIFI
+
+nmcli dev wifi connect "wifi_name" password "wifi_password" $ Connect to WIFI network
