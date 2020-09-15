@@ -1,0 +1,3 @@
+$ In order to install the full Ubuntu Gnome desktop use the tasksel command.
+sudo apt install tasksel $ In case the tasksel command is not available on your system you can install it
+sudo tasksel install ubuntu-desktop $ Once the tasksel command is installed, begin the Gnome desktop installation
