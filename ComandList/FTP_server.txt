@@ -1,0 +1,2 @@
+sudo apt install vsftpd
+man vsftpd.conf
