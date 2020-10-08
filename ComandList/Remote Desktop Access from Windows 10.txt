@@ -1,0 +1,12 @@
+$ Remote Desktop Access from Windows 10
+
+sudo apt install xrdp $ install Remote Desktop Protocol (RDP) server xrdp
+sudo systemctl enable --now xrdp $ Enable to start after reboot and run the remote desktop sharing server xrdp
+sudo ufw allow from any to any port 3389 proto tcp $ open a firewall port 3389 for an incoming traffic
+
+$ on window 10
+
+$ open the Remote Desktop Connection
+$ Enter the remote desktop share IP address or hostname. Optionally, allow the Windows 10 to save your credentials
+$ Click Yes when prompted by message: The identity of the remote computer cannot be verified
+$ Enter the password of the remote user
