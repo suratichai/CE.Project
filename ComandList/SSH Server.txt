@@ -1,16 +1,22 @@
 SSH Server
 
 sudo apt install openssh-server $ Install the openssh-server in order to perform
+
 systemctl status sshd $ Check the status. After the SSH server package installation the SSH server daemon should be up and running
+
 sudo systemctl restart ssh $ Check again to make sure it is turned on
+
 sudo ufw allow ssh $  Open ssh port 22 for an incoming traffic on your firewall
+
 sudo systemctl enable ssh $ Enable the SSH server to start automatically during the boot
 
 
 Connect from a remote client to your SSH server
+
 ip a $ obtain an IP address of your SSH server
 
 
 connect to your SSH server remotely using the following ssh command syntax
+
 ssh username@hostname-or-ip-address
 
