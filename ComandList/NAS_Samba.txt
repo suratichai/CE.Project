@@ -1,12 +1,15 @@
 #https://pimylifeup.com/raspberry-pi-samba/
 
 sudo apt-get install samba samba-common-bin
-#mkdir /home/pi/shared
+;mkdir /home/rock/NAS/Warehouse1
 sudo nano /etc/samba/smb.conf
 
-#[pimylifeupshare]
-#path = /home/pi/shared
-#writeable=Yes
-#create mask=0777
-#directory mask=0777
-#public=no
+;[SharePoint1]
+;path = /home/rock/NAS/Warehouse1
+;writeable=Yes
+;create mask=0777
+;directory mask=0777
+;public=no
+
+sudo smbpasswd -a rock
+12345678
