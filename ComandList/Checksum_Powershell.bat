@@ -1,0 +1,1 @@
+Get-FileHash [File path] -Algorithm md5
