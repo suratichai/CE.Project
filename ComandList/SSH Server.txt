@@ -21,3 +21,12 @@ connect to your SSH server remotely using the following ssh command syntax
 
 ssh username@hostname-or-ip-address
 
+Configuring Firewall
+
+By default, Xrdp listens on port 3389 on all interfaces. If you run a firewall on your Ubuntu server (which you should always do), you’ll need to add a rule that will enable traffic on the Xrdp port.
+To allow access to the Xrdp server from a specific IP address or IP range, in this example 192.168.1.0/24, run the following command:
+
+sudo ufw allow from 192.168.1.0/24 to any port 3389 $ Remote Desktop Protocol from anywhere to device
+
+
+
