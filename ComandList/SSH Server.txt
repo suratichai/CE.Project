@@ -15,9 +15,7 @@ Connect from a remote client to your SSH server
 
 ip a $ obtain an IP address of your SSH server
 
-In case you wish to connect to your SSH server over the internet you well need to obtain your external IP address:
-
-echo $(wget -qO - https://api.ipify.org)
+curl ifconfig.me $ obtain an Public IP address
 
 connect to your SSH server remotely using the following ssh command syntax
 
