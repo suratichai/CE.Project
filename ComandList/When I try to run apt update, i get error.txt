@@ -10,15 +10,22 @@ N: See apt-secure(8) manpage for repository creation and user configuration deta
 
 Solution :
 Step 1: Get tool wget
+
   sudo apt update
   sudo apt-get install -y wget
-Step 2: Edit /etc/apt/sources.list.d/apt-radxa-com.list
-  sudo nano /etc/apt/sources.list.d/apt-radxa-com.list
-    deb http://apt.radxa.com/buster-stable/ buster main
-    deb http://apt.radxa.com/buster-testing/ buster main
+  
+Step 2: Edit /etc/apt/sources.list.d/apt-radxa-com.list $ Enter # in front of the old command
+
+  sudo nano /etc/apt/sources.list.d/apt-radxa-com.list 
+    deb http://apt.radxa.com/buster-stable/ buster main $ Replace the old order
+    deb http://apt.radxa.com/buster-testing/ buster main $ Replace the old order
+    
 Step 3: Get the public key
+
   wget -O - apt.radxa.com/buster-testing/public.key | sudo apt-key add -
   wget -O - apt.radxa.com/buster-stable/public.key | sudo apt-key add -
+  
 Step 4: Test
+
   sudo apt update
   sudo apt install -y linux-4.4-latest
