@@ -1,0 +1,4 @@
+https://www.samba.org/
+https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701
+https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash
+https://security.appspot.com/vsftpd.html

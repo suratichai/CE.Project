@@ -1,0 +1,31 @@
+when I try to run apt update, i get following error :
+
+Err:4 http://apt.radxa.com/buster-stable buster InRelease
+  The following signatures were invalid: EXPKEYSIG 5761288B2B52CC90 Radxa <dev@radxa.com>
+Reading package lists... Done
+W: GPG error: http://apt.radxa.com/buster-stable buster InRelease: The following signatures were invalid: EXPKEYSIG 5761288B2B52CC90 Radxa <dev@radxa.com>
+E: The repository 'http://apt.radxa.com/buster-stable buster InRelease' is not signed.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+
+Solution :
+Step 1: Get tool wget
+
+  sudo apt update
+  sudo apt-get install -y wget
+  
+Step 2: Edit /etc/apt/sources.list.d/apt-radxa-com.list $ Enter # in front of the old command
+
+  sudo nano /etc/apt/sources.list.d/apt-radxa-com.list 
+    deb http://apt.radxa.com/buster-stable/ buster main $ Replace the old order
+    deb http://apt.radxa.com/buster-testing/ buster main $ Replace the old order
+    
+Step 3: Get the public key
+
+  wget -O - apt.radxa.com/buster-testing/public.key | sudo apt-key add -
+  wget -O - apt.radxa.com/buster-stable/public.key | sudo apt-key add -
+  
+Step 4: Test
+
+  sudo apt update
+  sudo apt install -y linux-4.4-latest
