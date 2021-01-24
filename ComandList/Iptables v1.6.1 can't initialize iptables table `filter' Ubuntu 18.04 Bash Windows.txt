@@ -1,0 +1,19 @@
+I need to open some port with:
+
+sudo ufw 171.96.0.25 to any port 5631 $ or sudo ufw allow 22/tcp
+
+But I get the following error:
+
+ERROR: initcaps
+[Errno 2] iptables v1.6.1: can't initialize iptables table `filter': Table does not exist (do you need to insmod?)
+Perhaps iptables or your kernel needs to be upgraded.
+
+I get the same error by typing:
+
+iptables -L
+
+
+
+I've already upgrade my kernel with :
+
+sudo apt install update-manager
