@@ -1,0 +1,1 @@
+https://learn.adafruit.com/resizing-raspberry-pi-boot-partition/edit-partitions
