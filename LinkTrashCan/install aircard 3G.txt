@@ -1,1 +1,2 @@
 https://www.raspberrypi.org/forums/viewtopic.php?t=180028
+https://www.thefanclub.co.za/how-to/how-setup-usb-3g-modem-raspberry-pi-using-usbmodeswitch-and-wvdial
