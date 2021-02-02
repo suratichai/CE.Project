@@ -1,1 +1,1 @@
-Get-FileHash [File path] -Algorithm md5
+Get-FileHash [File path] -Algorithm sha256
