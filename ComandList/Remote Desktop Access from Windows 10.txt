@@ -13,3 +13,19 @@ $ open the Remote Desktop Connection
 $ Enter the remote desktop share IP address or hostname. Optionally, allow the Windows 10 to save your credentials
 $ Click Yes when prompted by message: The identity of the remote computer cannot be verified
 $ Enter the password of the remote user
+
+when you see remote desktop blue screen:
+
+sudo apt instal xfce4
+
+sudo nano /etc/xrdp/startwm.sh
+
+comment these lines to:
+#test -x /etc/X11/Xsession && exec /etc/X11/Xsession
+#exec /bin/sh /etc/X11/Xsession
+
+add these lines:
+# xfce
+startxfce4
+
+ use remote desktop connection, login with Xvnc, fill in your username and password. 
