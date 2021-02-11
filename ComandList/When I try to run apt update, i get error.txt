@@ -29,3 +29,9 @@ Step 4: Test
 
   sudo apt update
   sudo apt install -y linux-4.4-latest
+
+The reason is the public key used before is expired.
+sudo apt-get install -y wget
+export DISTRO=buster-stable
+wget -O - apt.radxa.com/$DISTRO/public.key | sudo apt-key add -
+sudo apt-get update
