@@ -5,4 +5,5 @@ sudo tasksel install ubuntu-desktop $ Once the tasksel command is installed, beg
 
 or
 
-sudo apt-get install ubuntu-gnome-desktop
+sudo apt-get install tasksel -y
+sudo tasksel
