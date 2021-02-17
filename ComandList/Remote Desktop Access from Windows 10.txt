@@ -16,7 +16,7 @@ $ Enter the password of the remote user
 
 when you see remote desktop blue screen:
 
-sudo apt instal xfce4
+sudo apt install xfce4
 
 sudo nano /etc/xrdp/startwm.sh
 
