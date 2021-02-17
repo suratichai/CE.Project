@@ -1,0 +1,25 @@
+lsusb $ check connect device
+
+How to make the air card work.
+If the aircard is still plugged in, pull it out first. Then install.
+
+sudo apt install modemmanager modem-manager-gui network-manager network-manager-gnome
+
+Then plug in the aircard, wait a moment, ModemManager will detect the modem itself.
+
+mmcli -L $ See if you have found the modem.
+
+nmcli $ view connection status
+
+To create a connection profile to connect to the mobile operator.
+An example would be a connection with True, with the APN set to internet only.
+
+sudo nmcli c add con-name "mycon" type gsm ifname "*" apn "internet"  $ The name of the connection is mycon
+
+sudo nmcli nmcli c mod mycon connection.autoconnect yes
+
+A new route will be created automatically, you can connect and disconnect.
+
+sudo nmcli c up mycon
+
+sudo nmcli c down mycon
