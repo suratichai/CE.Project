@@ -1,15 +1,20 @@
-lsusb $ check connect device
+lsusb $ check connect device. you can see vendor id: 05c6 และ product id: 6000 -> Qualcomm, Inc. Siemens SG75
 
 How to make the air card work.
 If the aircard is still plugged in, pull it out first. Then install.
 
-sudo apt install modemmanager modem-manager-gui network-manager network-manager-gnome
+sudo apt install modemmanager modem-manager-gui network-manager network-manager-gnome $ install modem manager gui
 
 Then plug in the aircard, wait a moment, ModemManager will detect the modem itself.
 
 mmcli -L $ See if you have found the modem.
 
 nmcli $ view connection status
+
+Edit the /etc/NetworkManager/NetworkManager.conf file so that NetworkManager doesn't interfere with eth0 wlan0. $ You can use the command: nano to edit files.
+By adding the following text to the end of the file:
+[keyfile]
+unmanaged-devices=interface-name:eth0;interface-name:wlan*
 
 To create a connection profile to connect to the mobile operator.
 An example would be a connection with True, with the APN set to internet only.
