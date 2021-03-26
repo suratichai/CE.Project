@@ -1,0 +1,1 @@
+https://raw.githubusercontent.com/km4ack/pi-scripts/master/autohotspotN-setup
