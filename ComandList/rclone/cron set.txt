@@ -1,0 +1,1 @@
+*/5 * * * * /usr/local/bin/rclone_cronSync.sh >/dev/null 2>&1
