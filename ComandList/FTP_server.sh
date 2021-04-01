@@ -1,6 +1,6 @@
-apt install vsftpd
-cp /etc/vsftpd.conf  /etc/vsftpd.conf_default
-nano /etc/vsftpd.conf
+sudo apt install vsftpd
+sudo cp /etc/vsftpd.conf  /etc/vsftpd.conf_default
+sudo nano /etc/vsftpd.conf
 
-systemctl start vsftpd
-systemctl enable vsftpd
+sudo systemctl start vsftpd
+sudo systemctl enable vsftpd
