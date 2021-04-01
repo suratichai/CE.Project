@@ -1,0 +1,1 @@
+ sudo openvpn --config ~/Desktop/client1.ovpn
